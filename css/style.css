@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+
+a{
+    color: initial;
+}
+
+header{
+    background-color: #153f5f;
+}
+
+header nav div .text-style > li > a{
+    color: white;
+    font-weight: 550;
+    transition: all 0.5s;
+}
+
+header nav div .text-style > li{
+    transition: all 0.5s;
+}
+
+header nav div .text-style > li:hover{
+    color: #dddddd;  
+    border-bottom: 2px solid #dddddd;
+}
+
+header nav div ul .btn-style{
+    border-radius: 30px;
+}
