@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 
+/* ------------------------------------------ Config Geral ---------------------------------------- */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -10,6 +12,28 @@
 a{
     color: initial;
 }
+
+.custom-shape-divider-bottom-1652542860 {
+    margin-top: -55px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1652542860 svg {
+    position: relative;
+    display: block;
+    width: calc(184% + 1.3px);
+    height: 59px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1652542860 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* ------------------------------------------ Cabeçalho -------------------------------------------- */
 
 header{
     background-color: #153f5f;
@@ -33,3 +57,21 @@ header nav div .text-style > li:hover{
 header nav div ul .btn-style{
     border-radius: 30px;
 }
+
+/* ------------------------------------------ Conteúdo Principal ------------------------------------ */
+
+main section{
+    background: linear-gradient(90deg, #255981, #114168);
+}
+
+main section div .bg-style{
+    background-color: #FEFEFE;
+    border-radius: 5px;
+}
+
+main section div .hr-style{
+    border: 1px solid #FEFEFE;
+    position: relative;
+    bottom: 5px;
+}
+
