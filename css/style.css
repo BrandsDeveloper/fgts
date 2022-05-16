@@ -13,6 +13,21 @@ a{
     color: initial;
 }
 
+.hr-style-global{
+    width: 30%;
+    border: 2px solid #F9B032;
+    border-radius: 5px;
+    background: #F9B032;
+    opacity: 100;
+    position: relative;
+    top: 3px;
+}
+
+span.text-style{
+    font-weight: 600;
+    color: #153f5f;
+}
+
 .custom-shape-divider-bottom-1652542860 {
     margin-top: -55px;
     width: 100%;
@@ -60,19 +75,54 @@ header nav div ul .btn-style{
 
 /* ------------------------------------------ Conteúdo Principal ------------------------------------ */
 
-main #home{
+main section#home{
     background: linear-gradient(90deg, #255981, #114168);
 }
 
-main section div .bg-style{
+main section#home div .bg-style{
     background-color: #FEFEFE;
     border-radius: 5px;
 }
 
-main section div .hr-style{
+main section#home div .hr-style{
     border: 1px solid #FEFEFE;
     background: #FEFEFE;
     position: relative;
     bottom: 5px;
+}
+
+main section#benefits-what .border-style{
+    border-radius:30px;
+    box-shadow: 0px 0px 20px #000000a8;
+}
+
+main section#benefits-what .space-style{
+    margin-top: -30px;
+}
+
+main section#benefits-what .position-style{
+    position: relative;
+    bottom: 50px;
+}
+
+main section#benefits-like li::before{
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-image: url(/img/check.svg);
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 6px;
+} 
+
+main section#benefits-like li{
+    list-style: none;
+}
+
+main section#benefits-advantages .border-style{
+    border-radius:30px;
+    box-shadow: 0px 0px 20px #000000a8;
 }
 

@@ -24,7 +24,8 @@
         <!-- Cabeçalho -->
         <header>
 
-            <nav class="container navbar navbar-expand-md navbar-style navbar-dark">
+            <!-- Navbar Normal -->
+            <nav class="container navbar d-none d-md-flex navbar-expand-md navbar-style navbar-dark">
 
                 <a class="navbar-brand" href=""> <img src="img/LogoBrancaeAmarelaLider.svg" alt="Líder" width="152"></a>
 
@@ -35,13 +36,67 @@
                 <div class="collapse navbar-collapse" id="Responsive">
                     <ul class="navbar-nav ms-auto text-style">
                         <li class="nav-item pe-2 mx-auto mx-md-0"><a class="nav-link" href="#Home">Home</a></li>
-                        <li class="nav-item pe-2 mx-auto mx-md-0"><a class="nav-link" href="#Beneficios">Benefícios</a></li>
+                        <li class="nav-item dropdown pe-2 mx-auto mx-md-0">
+                            <a class="nav-link dropdown-toggle" id="NavDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Benefícios</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="" class="dropdown-item">O que é</a>
+                                    <a href="" class="dropdown-item">Como contratar</a>
+                                    <a href="" class="dropdown-item">Vantagens</a>
+                                    <a href="" class="dropdown-item">Comparativo</a>
+                                    <a href="" class="dropdown-item">Parceiros</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item pe-2 mx-auto mx-md-0"><a class="nav-link" href="#Feedback">Feedbacks</a></li>
                         <li class="nav-item pe-3 mx-auto mx-md-0"><a class="nav-link" href="#FAQ">FAQ</a></li>
                         <a class="btn btn-success btn-style px-4 py-2" href="">Fazer simulação grátis</a>
                     </ul>
                 </div>
 
+            </nav>
+
+            <!-- Navbar Responsiva -->
+            <nav class="container navbar d-block d-md-none navbar-style navbar-light sticky-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href=""> <img src="img/LogoBrancaeAmarelaLider.svg" alt="Líder" width="152"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Líder</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                      <ul class="navbar-nav ms-auto text-style justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item pe-2 mx-auto mt-5"><a class="nav-link" href="#Home">Home</a></li>
+                        <li class="nav-item dropdown pe-2 mx-auto mt-4">
+                            <a class="nav-link dropdown-toggle" id="NavDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Benefícios</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="" class="dropdown-item">O que é</a>
+                                    <a href="" class="dropdown-item">Como contratar</a>
+                                    <a href="" class="dropdown-item">Vantagens</a>
+                                    <a href="" class="dropdown-item">Comparativo</a>
+                                    <a href="" class="dropdown-item">Parceiros</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-2 mx-auto mt-4"><a class="nav-link" href="#Feedback">Feedbacks</a></li>
+                        <li class="nav-item pe-3 mx-auto mt-4"><a class="nav-link" href="#FAQ">FAQ</a></li>
+                        <a class="btn btn-success btn-style px-4 py-2 mt-4 mx-auto" href="">Fazer simulação grátis</a>
+                    </ul>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              
             </nav>
 
         </header>
@@ -113,19 +168,39 @@
             </div>
 
             <!-- Secion Two -->
-            <section>
+            <section id="benefits-what">
 
                 <div class="container mt-5 d-flex flex-column justify-content-center">
 
-                    <h1 class="pt-5 text-center">O que é a Antecipação Saque-Aniversário</h1>
+                    <h1 class="pt-5 text-center">O que é a <span class="text-style">Antecipação Saque-Aniversário?</span> </h1>
 
                     <p class="text-center h5 mt-3 w-75 mx-auto">È uma nova modalidade de crédito ao trabalhador que tem saldo FGTS e opta pela Antecipação do Saque-Aniversário.</p>
 
-                    <div class="row">
+                    <div class="row mt-5 mx-auto justify-content-around">
 
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4"></div>
+                        <div class="col-md-3 border-style mt-5 mt-md-0">
+
+                            <img src="img/3.webp" alt="Identidade" width="120" class="d-block mx-auto position-style">
+
+                            <p class="text-center h5 px-2 space-style">Já disponível para trabalhador com carteira assinada ou quem tem saldo FGTS em conta inativa.</p>
+
+                        </div>
+
+                        <div class="col-md-3 border-style mt-5 mt-md-0">
+
+                            <img src="img/1.webp" alt="Carteira" width="120" class="d-block mx-auto position-style">
+
+                            <p class="text-center h5 px-2 space-style">Antecipe até 5 parcelas anuais do seu Saque-Aniversário, contrate a partir de R$ 400,00 com taxas de 1,99% a.m.</p>
+
+                        </div>
+
+                        <div class="col-md-3 border-style mt-5 mt-md-0">
+
+                            <img src="img/2.webp" alt="Usuário" width="120" class="d-block mx-auto position-style">
+
+                            <p class="text-center h5 px-2 space-style"></pclass>Use seu crédito sem comprometer a sua renda com prestações mensais, pois o desconto é anual e feito diretamente no saldo do FGTS.</p>
+
+                        </div>
 
                     </div>
 
@@ -133,20 +208,104 @@
                         <a href="" class="btn btn-success w-auto mt-5 px-4" type="button">Fazer simulação grátis</a>
                     </div>
 
+                    <div class="d-flex my-5 justify-content-center">
+                        <hr class="hr-style-global">
+                        <img src="img/BonecoAzuleAmarelo.webp" alt="" width="50" class="mx-2">
+                        <hr class="hr-style-global">
+                    </div>
 
                 </div>
 
             </section>
 
             <!-- Secion Three -->
-            <section>
+            <section id="benefits-like">
 
+                <div class="container">
+                    
+                    <div class="d-flex justify-content-center">
+                        <h1 class="text-center w-75">Saiba todas as condições para contratar a <span class="text-style">Antecipação Saque-Aniversário</span> </h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" alt="">
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <ul>
+                                <li class="mt-4">Ser maior de 18 anos ou emancipado</li>
+                                <li class="mt-4">Ter situação regular com a Receita Federal</li>
+                                <li class="mt-4">Possuir conta corrente ou poupança</li>
+                                <li class="mt-4">Ter saldo FGTS em conta ativa ou inativa</li>
+                                <li class="mt-4">Ser optante da modalidade Saque-Aniversário do FGTS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <a href="" class="btn btn-success w-auto mt-5 px-4" type="button">Fazer simulação grátis</a>
+                    </div>
+
+                    <div class="d-flex my-5 justify-content-center">
+                        <hr class="hr-style-global">
+                        <img src="img/BonecoAzuleAmarelo.webp" alt="" width="50" class="mx-2">
+                        <hr class="hr-style-global">
+                    </div>
+
+                </div>
 
             </section>
 
             <!-- Secion Four -->
-            <section>
+            <section id="benefits-advantages">
 
+                <div class="container">
+
+                    <div class="d-flex justify-content-center">
+                        <h1 class="text-center w-50"> <span class="text-style">Saiba as vantagens</span> da antecipação do Saque-Aniversário</h1>
+                    </div>
+                
+
+                    <div class="row justify-content-center text-center mt-5">
+                        <div class="col-md-3 border-style mx-3">
+                            
+                            <img src="img/porcentagem.webp" alt="Porcentagem" width="100" class="d-block mx-auto my-4">
+
+                            <span class="text-style h5">Taxas a partir de 1,99% a.m.</span>
+
+                            <p class="h6">Crédito consignado com as melhores condições no mercado</p>
+
+                        </div>
+                        <div class="col-md-3 border-style mx-3">
+                            
+                            <img src="img/money.webp" alt="Dinheiro" width="120" class="d-block mx-auto my-3">
+
+                            <span class="text-style h5">Contrate a partir de R$ 700,00</span>
+
+                            <p class="h6">Fácil contratação e pagamento rápido na conta, tudo digital e 100% seguro.</p>
+
+                        </div>
+                        <div class="col-md-3 border-style mx-3">
+                            
+                            <img src="img/Sorriso.webp" alt="Sorriso" width="120" class="d-block mx-auto my-3">
+
+                            <span class="text-style h5">Menos dívidas</span>
+
+                            <p class="h6">Zero parcelas mensais, o desconto é feito anualmente no FGTS. </p>
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <a href="" class="btn btn-success w-auto mt-5 px-4" type="button">Fazer simulação grátis</a>
+                    </div>
+
+                    <div class="d-flex my-5 justify-content-center">
+                        <hr class="hr-style-global">
+                        <img src="img/BonecoAzuleAmarelo.webp" alt="" width="50" class="mx-2">
+                        <hr class="hr-style-global">
+                    </div>
+                </div>
 
             </section>
 
