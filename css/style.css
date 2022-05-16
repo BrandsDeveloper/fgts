@@ -60,7 +60,7 @@ header nav div ul .btn-style{
 
 /* ------------------------------------------ Conteúdo Principal ------------------------------------ */
 
-main section{
+main #home{
     background: linear-gradient(90deg, #255981, #114168);
 }
 
@@ -71,6 +71,7 @@ main section div .bg-style{
 
 main section div .hr-style{
     border: 1px solid #FEFEFE;
+    background: #FEFEFE;
     position: relative;
     bottom: 5px;
 }
