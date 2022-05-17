@@ -23,6 +23,18 @@ a{
     top: 3px;
 }
 
+.border-style{
+    border-radius:30px;
+    box-shadow: 0px 0px 20px #000000a8;
+    transition: all 0.5s;
+}
+
+.border-style:hover{
+    transform: translate3d(0px, -8%, 0px);
+    border-radius:30px;
+    box-shadow: 0px 0px 20px #000000a8;
+}
+
 span.text-style{
     font-weight: 600;
     color: #153f5f;
@@ -46,6 +58,25 @@ span.text-style{
 
 .custom-shape-divider-bottom-1652542860 .shape-fill {
     fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1652814020 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1652814020 svg {
+    position: relative;
+    display: block;
+    width: calc(167% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1652814020 .shape-fill {
+    fill: #114168;
 }
 
 /* ------------------------------------------ Cabeçalho -------------------------------------------- */
@@ -91,11 +122,6 @@ main section#home div .hr-style{
     bottom: 5px;
 }
 
-main section#benefits-what .border-style{
-    border-radius:30px;
-    box-shadow: 0px 0px 20px #000000a8;
-}
-
 main section#benefits-what .space-style{
     margin-top: -30px;
 }
@@ -121,8 +147,31 @@ main section#benefits-like li{
     list-style: none;
 }
 
-main section#benefits-advantages .border-style{
-    border-radius:30px;
-    box-shadow: 0px 0px 20px #000000a8;
+main section#quality-benefits .bg-style{
+    background-color: #114168;
+    border-radius: 25px;
+    font-weight: 600;
 }
 
+
+main section#benefits-partner h1.text-style{
+    font-weight: 600;
+    color: #153f5f;
+}
+
+
+
+footer{
+    background-color: #114168;
+}
+
+footer a{
+    color: #FEFEFE;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 17px;
+}
+
+footer a:hover{
+    color: #dbd9d9;
+}
