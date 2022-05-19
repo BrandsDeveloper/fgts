@@ -15,7 +15,7 @@ a{
 
 .hr-style-global{
     width: 30%;
-    border: 2px solid #F9B032;
+    border: 1px solid #F9B032;
     border-radius: 5px;
     background: #F9B032;
     opacity: 100;
@@ -122,6 +122,10 @@ main section#home div .hr-style{
     bottom: 5px;
 }
 
+main section#home div .img{
+    width: 100%;
+}
+
 main section#benefits-what .space-style{
     margin-top: -30px;
 }
@@ -153,13 +157,27 @@ main section#quality-benefits .bg-style{
     font-weight: 600;
 }
 
-
 main section#benefits-partner h1.text-style{
     font-weight: 600;
     color: #153f5f;
 }
 
+main section#Feedback .bg-style{
+    background-color: #153f5f;
+    border-radius: 25px;
+}
 
+main section#FAQ summary{
+    background-color: #153f5f;
+}
+
+main section#FAQ .bg-style{
+    background-color: #b0b3b633;
+}
+
+main section#FAQ div.col-md-6 img{
+    width: 100%;
+}
 
 footer{
     background-color: #114168;
