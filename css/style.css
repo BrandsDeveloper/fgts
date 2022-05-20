@@ -139,7 +139,7 @@ main section#benefits-like li::before{
     content: "";
     width: 23px;
     height: 23px;
-    background-image: url(/img/check.svg);
+    background-image: url(https://brandsdeveloper.github.io/fgts/img/check.svg);
     background-size: 100%;
     display: inline-block;
     margin-right: 5px;
